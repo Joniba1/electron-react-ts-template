@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Heebo';
+	src: url('../../assets/fonts/Heebo-VariableFont_wght.ttf')
+}
+
+body {
+	--text-color: #{$text-color};
+
+	&.dark {
+		--text-color: #{$dark-text-color};
+	}
+
+	font-family: Heebo;
+	margin: 0;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer {
+	height: min-content;
+}
+
+main {
+	height: 100%;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+*:focus {
+	outline: none;
+}
+
+* {
+	box-sizing: border-box;
+	transition: color 0.05s ease-out;
+}
