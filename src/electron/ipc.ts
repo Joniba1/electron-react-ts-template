@@ -1,7 +1,6 @@
 import { ipcMain, IpcMainInvokeEvent } from 'electron'
+import { getRandomNum } from './utils/misc'
 
 export const registerIpcHandlers = () => {
-	ipcMain.handle('calculate-sum', async (_event: IpcMainInvokeEvent, a: number, b: number) => {
-		return calculateSum(a, b)
-	})
+	ipcMain.handle('get-random-num', async (_event: IpcMainInvokeEvent) => getRandomNum())
 }

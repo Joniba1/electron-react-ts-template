@@ -2,7 +2,7 @@ import { electronAPI } from '@electron-toolkit/preload'
 import { contextBridge, ipcRenderer } from 'electron'
 
 const api: API = {
-	calculateSum: (a: number, b: number) => ipcRenderer.invoke('calculate-sum', a, b),
+	getRandomNum: () => ipcRenderer.invoke('get-random-num'),
 
 	//* Add more API methods here as needed
 }

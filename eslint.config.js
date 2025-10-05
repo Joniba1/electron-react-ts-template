@@ -34,7 +34,8 @@ export default [
 			'react-hooks/exhaustive-deps': 'warn',
 			'padding-line-between-statements': [
 				'warn',
-				{ blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+				{ blankLine: 'always', prev: 'import', next: '*' },
+				{ blankLine: 'any', prev: 'import', next: 'import' },
 				{ blankLine: 'always', prev: '*', next: 'return' },
 				{ blankLine: 'always', prev: ['block', 'block-like'], next: '*' },
 			],
@@ -45,8 +46,9 @@ export default [
 					'newlines-between': 'always',
 				},
 			],
+			'no-undef': 'off',
 			'unused-imports/no-unused-imports': 'warn',
-			'no-unused-vars': 'off',
+			'no-unused-vars': 'warn',
 		},
 		settings: {
 			react: {

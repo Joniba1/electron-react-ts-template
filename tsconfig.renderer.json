@@ -9,12 +9,13 @@
         "paths": {
             "@/*": [ "src/renderer/*" ],
             "@assets/*": [ "src/assets/*" ],
+            "@shared/*": [ "src/shared/*" ]
         }
 
     },
     "include": [
         "src/renderer",
-        "src/types",
+        "src/shared",
         "src/assets"
     ]
 }
