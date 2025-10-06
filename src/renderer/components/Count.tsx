@@ -1,6 +1,6 @@
+import '@/pages/Layout.scss'
 import { useState } from 'react'
 import './Count.scoped.scss'
-import '@/pages/Layout.scss'
 
 const Count = () => {
 	const [num, setNum] = useState(0)

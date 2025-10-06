@@ -1,18 +1,18 @@
 import pluginJs from '@eslint/js'
 import tsParser from '@typescript-eslint/parser'
+import eslintPluginImport from 'eslint-plugin-import'
 import prettier from 'eslint-plugin-prettier'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import globals from 'globals'
-import eslintPluginImport from 'eslint-plugin-import'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
+import globals from 'globals'
 
 export default [
 	pluginJs.configs.recommended,
 	react.configs.flat.recommended,
 	react.configs.flat['jsx-runtime'],
 	{
-		files: ['src/renderer/**/*.{ts,tsx,js,jsx}'],
+		files: ['src/renderer/**/*.{ts,tsx}'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			globals: {
